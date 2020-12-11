@@ -25,23 +25,23 @@ USE sena_proyect;
 
 CREATE TABLE departamentos(
 	idDepartamento INT NOT NULL AUTO_INCREMENT,
-	DepNombre VARCHAR NOT NULL,
-	DepCodigoDepartamento VARCHAR NOT NULL,
-	-- DepMunicipio VARCHAR NOT NULL,
+	DepNombre VARCHAR(50) NOT NULL,
+	DepCodigoDepartamento VARCHAR(50) NOT NULL,
+	-- DepMunicipio VARCHAR(50) NOT NULL,
 	PRIMARY KEY (idDepartamento)
 )AUTO_INCREMENT = 1;
 
 CREATE TABLE municipios(
 	idMunicipio INT NOT NULL AUTO_INCREMENT,
-	MunNombre VARCHAR NOT NULL,
+	MunNombre VARCHAR(50) NOT NULL,
 	PRIMARY KEY (idMunicipio)
 )AUTO_INCREMENT = 1;
 
 CREATE TABLE especies(
 	idEspecie INT NOT NULL AUTO_INCREMENT,
-	EspNombre VARCHAR NOT NULL,
-	EspGenero VARCHAR NOT NULL,
-	EspFamilia VARCHAR NOT	NULL,
+	EspNombre VARCHAR(50) NOT NULL,
+	EspGenero VARCHAR(50) NOT NULL,
+	EspFamilia VARCHAR(50) NOT	NULL,
 	PRIMARY KEY (idEspecie)
 )AUTO_INCREMENT = 1;
 
